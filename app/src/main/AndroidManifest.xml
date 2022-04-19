@@ -10,6 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GetKonser">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.GetKonser.NoActionBar" />
+        <activity
+            android:name=".RecoveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity

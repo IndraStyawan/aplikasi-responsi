@@ -5,23 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
+
     <LinearLayout
-        android:id="@+id/linearlay1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="257dp"
-            android:layout_height="178dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/getkonser" />
+        <TextView
+            android:layout_width="416dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Registrasi Account"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/purple2"
+            android:textSize="25dp"
+            android:textStyle="bold" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +41,7 @@
                 android:layout_height="60dp"
                 android:paddingStart="20dp"
                 android:hint="Email"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/bg_et"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
@@ -65,60 +69,34 @@
                 android:textColorHint="@color/black"
                 android:textSize="20dp" />
         </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/confirmpassword"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:background="@drawable/bg_et"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:id="@+id/btnlogin"
             android:layout_width="330dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-            android:text="LOGIN"
+            android:text="Daftar"
             android:textSize="18dp" />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lupa Password? Klik"
-                android:layout_marginTop="20dp"
-                android:textSize="15dp"
-                android:layout_marginLeft="50dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/lppw"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Disini"
-                android:layout_marginTop="20dp"
-                android:textSize="15dp"
-                android:layout_marginLeft="3dp"
-                android:textColor="@color/teal_700"/>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Belum Punya AKun? Klik"
-                android:layout_marginTop="10dp"
-                android:textSize="15dp"
-                android:layout_marginLeft="50dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/daftar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Disini"
-                android:layout_marginTop="10dp"
-                android:textSize="15dp"
-                android:layout_marginLeft="3dp"
-                android:textColor="@color/teal_700"/>
-        </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
